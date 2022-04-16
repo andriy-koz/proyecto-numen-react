@@ -58,7 +58,7 @@ const NavBar = () => {
       </IconsContainer>
       <MenuSlider opened={openedMenu} />
       <UserSlider opened={openedUser} />
-      <CartSlider opened={openedCart} />
+      <CartSlider opened={openedCart} counter={2} />
     </StyledNavBar>
   );
 };

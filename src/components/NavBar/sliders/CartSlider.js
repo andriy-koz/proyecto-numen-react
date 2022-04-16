@@ -25,7 +25,7 @@ const StyledCart = styled.div`
 const CartSlider = props => {
   return (
     <StyledCart opened={props.opened}>
-      <p>5 Items added</p>
+      <p>{props.counter} Items added</p>
     </StyledCart>
   );
 };

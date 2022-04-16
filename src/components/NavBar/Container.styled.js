@@ -6,7 +6,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   @media (min-width: 768px) {
-    &:hover {
+    &:hover img {
       filter: brightness(0) saturate(100%) invert(100%) sepia(7%) saturate(0%)
         hue-rotate(358deg) brightness(111%) contrast(106%);
       cursor: pointer;

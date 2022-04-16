@@ -11,6 +11,9 @@ const StyledInput = styled.input`
   opacity: ${({ open }) => (open ? 1 : 0)};
   pointer-events: ${({ open }) => (open ? 'auto' : 'none')};
   transform: scale(${({ open }) => (open ? 1 : 0.5)});
+  @media (min-width: 768px) {
+    margin-right: ${({ open }) => (open ? 0 : -168)}px;
+  }
 `;
 
 const SearchInput = props => {

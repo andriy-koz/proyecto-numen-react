@@ -1,15 +1,15 @@
 import { useState, useEffect } from 'react';
-import Links from './Links';
-import UserSlider from './UserSlider';
-import MenuSlider from './MenuSlider';
-import SearchInput from './SearchInput';
-import MenuBtn from './MenuBtn';
-import UserBtn from './UserBtn';
-import SearchBtn from './SearchBtn';
-import { StyledNavBar, IconsContainer } from './NavBar.styled';
 import logo from '../../images/logo.svg';
-import CartBtn from './CartBtn';
-import CartSlider from './CartSlider';
+import { StyledNavBar, IconsContainer } from './NavBar.styled';
+import Links from './Links';
+import SearchInput from './SearchInput';
+import UserSlider from './sliders/UserSlider';
+import MenuSlider from './sliders/MenuSlider';
+import CartSlider from './sliders/CartSlider';
+import MenuBtn from './buttons/MenuBtn';
+import UserBtn from './buttons/UserBtn';
+import SearchBtn from './buttons/SearchBtn';
+import CartBtn from './buttons/CartBtn';
 
 const NavBar = () => {
   const [openedMenu, setOpenedMenu] = useState(false);

@@ -1,16 +1,7 @@
 import styled from 'styled-components';
-import closeIcon from '../../images/close.svg';
-import openIcon from '../../images/menu.svg';
-
-const Container = styled.div`
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  @media (min-width: 768px) {
-    display: none;
-  }
-`;
+import closeIcon from '../../../images/close.svg';
+import openIcon from '../../../images/search.svg';
+import { Container } from '../Container.styled';
 
 const OpenMenu = styled.img`
   margin-right: -24px;
@@ -24,7 +15,7 @@ const CloseMenu = styled.img`
   transform: rotate(${({ opened }) => (opened ? -90 : 0)}deg);
 `;
 
-const MenuBtn = props => {
+const SearchBtn = props => {
   return (
     <Container onClick={props.onClick}>
       <OpenMenu src={openIcon} alt='' opened={props.opened} />
@@ -33,4 +24,4 @@ const MenuBtn = props => {
   );
 };
 
-export default MenuBtn;
+export default SearchBtn;

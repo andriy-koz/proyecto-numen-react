@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import cartIcon from '../../images/cart.svg';
-import { Container } from './Container.styled';
+import cartIcon from '../../../images/cart.svg';
+import { Container } from '../Container.styled';
 
 const CartStyled = styled.img`
   transition: all 300ms;

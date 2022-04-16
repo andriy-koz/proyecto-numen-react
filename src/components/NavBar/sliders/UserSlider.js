@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import userIcon from '../../images/user.svg';
+import userIcon from '../../../images/user.svg';
 
 const StyledUser = styled.div`
   display: flex;

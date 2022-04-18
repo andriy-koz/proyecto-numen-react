@@ -1,41 +1,33 @@
-import { useState } from 'react';
-import { StyledCarousel, StyledCard } from './Styles/Carousel.styled';
-import Arrow from './Arrow';
+import React from 'react';
+import AliceCarousel from 'react-alice-carousel';
+import 'react-alice-carousel/lib/alice-carousel.css';
 
+const handleDragStart = (e) => e.preventDefault();
 
+const items = [
+    <img src="path-to-img" onDragStart={handleDragStart} />,
+    <img src="path-to-img" onDragStart={handleDragStart} />,
+    <img src="path-to-img" onDragStart={handleDragStart} />,
+    <img src="path-to-img" onDragStart={handleDragStart} />,
+    <img src="path-to-img" onDragStart={handleDragStart} />,
+    <img src="path-to-img" onDragStart={handleDragStart} />,
+];
 
-const Carousel = () => {
-
-    const [index, setIndex] = useState(0);
-
-    const imgArray = [
-        {id: 1, img: 'img1'},
-        {id: 2, img: 'img2'},
-        {id: 3, img: 'img3'},
-        {id: 4, img: 'img4'},
-        {id: 5, img: 'img5'},
-    ];
-
-    const previous = () => {
-        if (index > 0) setIndex(index - 1);
-        if (index === 0) setIndex(4);
-    };
-    
-    
-    const next = () => {
-        if (index < imgArray.length -1) setIndex(index + 1);
-        if (index === imgArray.length - 1) setIndex(0);
-    }
-
-const mapeoImg = imgArray.map((item =><StyledCard key={item.id}>{item.img}</StyledCard>));
-
-    return(
-        <StyledCarousel>
-            <Arrow left onClick={previous} />
-                {mapeoImg}
-            <Arrow onClick={next} />
-        </StyledCarousel>
-    );
+const responsive = {
+    0: {items: 1},
+    550: {items: 2},
+    768: {items: 3},
 };
 
-export default Carousel;   
+const Gallery = () => {
+    return (
+        <AliceCarousel mouseTracking
+        items={items}
+        paddingLeft={50}
+        paddingRight={50}
+        responsive={responsive}
+        />
+    );
+}
+
+export default Gallery;   

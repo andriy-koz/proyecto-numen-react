@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import 'react-alice-carousel/lib/alice-carousel.css';
 
 export const StyledCarousel = styled.div`
     margin-top: 30px;

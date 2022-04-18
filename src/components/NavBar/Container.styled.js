@@ -11,5 +11,6 @@ export const Container = styled.div`
         hue-rotate(358deg) brightness(111%) contrast(106%);
       cursor: pointer;
     }
+    display: ${props => (props.menu ? 'none' : 'flex')};
   }
 `;

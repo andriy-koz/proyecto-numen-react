@@ -1,15 +1,12 @@
 import { useState, useEffect } from 'react';
-import logo from '../../images/logo.svg';
 import { StyledNavBar, IconsContainer } from './NavBar.styled';
+import logo from '../../images/logo.svg';
 import Links from './Links';
 import SearchInput from './SearchInput';
 import UserSlider from './sliders/UserSlider';
 import MenuSlider from './sliders/MenuSlider';
 import CartSlider from './sliders/CartSlider';
-import MenuBtn from './buttons/MenuBtn';
-import UserBtn from './buttons/UserBtn';
-import SearchBtn from './buttons/SearchBtn';
-import CartBtn from './buttons/CartBtn';
+import Button from './Button';
 
 const NavBar = () => {
   const [openedMenu, setOpenedMenu] = useState(false);
@@ -51,10 +48,10 @@ const NavBar = () => {
       <Links />
       <IconsContainer>
         <SearchInput opened={openedSearch} />
-        <SearchBtn opened={openedSearch} onClick={searchHandler} />
-        <UserBtn opened={openedUser} onClick={userHandler} />
-        <CartBtn onClick={cartHandler} counter={2} />
-        <MenuBtn opened={openedMenu} onClick={menuHandler} />
+        <Button type='search' opened={openedSearch} onClick={searchHandler} />
+        <Button type='user' opened={openedUser} onClick={userHandler} />
+        <Button type='cart' onClick={cartHandler} counter={2} />
+        <Button type='menu' opened={openedMenu} onClick={menuHandler} />
       </IconsContainer>
       <MenuSlider opened={openedMenu} />
       <UserSlider opened={openedUser} />

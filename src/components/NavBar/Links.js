@@ -4,7 +4,7 @@ const myList = ['Link 1', 'Link 2', 'Link 3', 'Link 4', 'Link 5'];
 
 const StyledLinks = styled.ul`
   display: none;
-  color: #a9d6e5;
+  color: ${props => props.theme.color.tertiary};
   li:hover {
     cursor: pointer;
     color: white;

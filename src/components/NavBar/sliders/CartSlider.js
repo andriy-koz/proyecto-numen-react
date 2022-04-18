@@ -7,7 +7,7 @@ const StyledCart = styled.div`
   position: absolute;
   right: 0;
   top: 52px;
-  background-color: #013a63;
+  background-color: ${props => props.theme.color.secondary};
   padding: 25px;
   width: 180px;
   border-radius: 8px;
@@ -17,7 +17,7 @@ const StyledCart = styled.div`
   pointer-events: ${({ opened }) => (opened ? 'auto' : 'none')};
   p {
     font-size: 16px;
-    color: #a9d6e5;
+    color: ${props => props.theme.color.tertiary};
     font-weight: 500;
   }
 `;

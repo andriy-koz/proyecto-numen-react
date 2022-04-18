@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const StyledInput = styled.input`
-  font-family: 'Roboto', sans-serif;
+  font-family: ${props => props.theme.font}, sans-serif;
   font-weight: 500;
   padding: 0 5px;
   border-radius: 8px;

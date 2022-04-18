@@ -9,7 +9,7 @@ const StyledMenu = styled.div`
   position: absolute;
   right: 0;
   top: 52px;
-  background-color: #013a63;
+  background-color: ${props => props.theme.color.secondary};
   padding: 25px;
   width: 180px;
   border-radius: 8px;
@@ -18,7 +18,7 @@ const StyledMenu = styled.div`
   opacity: ${({ opened }) => (opened ? 1 : 0)};
   pointer-events: ${({ opened }) => (opened ? 'auto' : 'none')};
   ul {
-    color: #a9d6e5;
+    color: ${props => props.theme.color.tertiary};
     display: grid;
     gap: 5px;
   }

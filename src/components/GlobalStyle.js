@@ -7,6 +7,6 @@ export const GlobalStyles = createGlobalStyle`
 }
 
 body{
-  font-family: 'Roboto', sans-serif;
+  font-family: ${props => props.theme.font}, sans-serif;
   overflow-x: hidden;
 }`;

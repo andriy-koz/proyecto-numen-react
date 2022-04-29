@@ -1,0 +1,20 @@
+.alice-carousel__prev-btn-item, .alice-carousel__next-btn-item {
+    color: #500925;
+    font-size: 15px;
+    border: solid 2px #500925;
+    border-radius: 100px;
+}
+
+
+.alice-carousel__dots-item.__active {
+    color: #500925;
+}
+.alice-carousel__dots-item:not(.__custom):hover, .alice-carousel__dots-item:not(.__custom).__active {
+    background-color: #500925;
+}
+
+.alice-carousel__dots-item:not(.__custom){
+    background-color: #898da3;
+}
+
+

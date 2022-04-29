@@ -1,5 +1,7 @@
 import { ThemeProvider } from "styled-components";
 import Gallery from "./Components/Carousel";
+import "./Components/Styles/carousel.css";
+
 
 const theme = {
   colors: {

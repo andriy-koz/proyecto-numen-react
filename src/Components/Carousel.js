@@ -1,5 +1,5 @@
 import React from 'react';
-import AliceCarousel from 'react-alice-carousel';
+import AliceCarousel, { AutoplayDirection } from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 
 
@@ -29,6 +29,9 @@ const Gallery = () => {
         paddingLeft={50}
         paddingRight={50}
         responsive={responsive}
+        infinite
+        autoPlay
+        autoPlayInterval={2000}
         />
     );
 }

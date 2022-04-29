@@ -31,7 +31,7 @@ const Gallery = () => {
         responsive={responsive}
         infinite
         autoPlay
-        autoPlayInterval={2000}
+        autoPlayInterval={2500}
         />
     );
 }

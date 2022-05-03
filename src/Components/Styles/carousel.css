@@ -17,13 +17,23 @@
     background-color: #898da3;
 }
 
+.alice-carousel__wrapper{
+    height: 210px;
+}
 .alice-carousel__stage{
     max-width: auto;
     height: 200px;
 }
+
+.alice-carousel__stage-item{
+    margin: 10px;
+    border: solid #500925;
+}
+
 img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 

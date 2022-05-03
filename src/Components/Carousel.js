@@ -48,7 +48,7 @@ const Gallery = () => {
         paddingRight={50}
         responsive={responsive}
         infinite
-        
+        autoPlay
         autoPlayInterval={2500}
         />
     );

@@ -1,5 +1,5 @@
-import NavBar from './Components/NavBar/NavBar';
-import { GlobalStyles } from './Components/GlobalStyle';
+import NavBar from './components/NavBar/NavBar';
+import { GlobalStyles } from './components/GlobalStyle';
 import { ThemeProvider } from 'styled-components';
 
 function App() {

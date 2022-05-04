@@ -34,7 +34,7 @@ const items = [
 ];
 
 const responsive = {
-    1: {items: 1},
+    320: {items: 1},
     550: {items: 2},
     768: {items: 3},
 };

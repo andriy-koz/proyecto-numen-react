@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
-import { StyledNavBar, IconsContainer } from './NavBar.styled';
-import logo from '../../images/logo.svg';
-//import numen from '../../images/numen.svg';  cambiar logo por numen.svg
+import { StyledNavBar, IconsContainer, StyledLogo } from './NavBar.styled';
+import logo from '../../images/numen.png';
 import Links from './Links';
 import SearchInput from './SearchInput';
 import UserSlider from './sliders/UserSlider';
@@ -45,7 +44,7 @@ const NavBar = () => {
 
   return (
     <StyledNavBar>
-      <img src={logo} alt='Dev logo' /> 
+      <StyledLogo src={logo} alt='Numen logo' />
       <Links />
       <IconsContainer>
         <SearchInput opened={openedSearch} />

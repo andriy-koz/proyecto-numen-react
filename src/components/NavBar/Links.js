@@ -1,8 +1,15 @@
 import styled from 'styled-components';
 
-const myList = ['Link 1', 'Link 2', 'Link 3', 'Link 4', 'Link 5'];
+export const myList = [
+  'SOBRE NOSOTROS',
+  'NUESTROS VINOS',
+  'COSECHAS',
+  'COMPRAR',
+];
 
 const StyledLinks = styled.ul`
+  margin: 15px 0 15px;
+  order: 3;
   display: none;
   list-style: none;
   color: ${props => props.theme.color.tertiary};

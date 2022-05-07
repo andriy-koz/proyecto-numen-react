@@ -5,11 +5,11 @@ import { ThemeProvider } from 'styled-components';
 function App() {
   const theme = {
     color: {
-      primary: '#012a4a',
-      secondary: '#013a63',
-      tertiary: '#a9d6e5',
+      primary: '#161314',
+      secondary: '#2B2628',
+      tertiary: '#F4F3F3',
     },
-    font: 'Roboto',
+    font: 'Cormorant',
   };
 
   return (

@@ -1,6 +1,7 @@
 import { GlobalStyles } from './components/GlobalStyle';
 import { ThemeProvider } from 'styled-components';
 import ModalAge from './components/ModalAge/ModalAge';
+import { useState, useEffect } from 'react';
 
 function App() {
   const theme = {
@@ -12,10 +13,14 @@ function App() {
     font: 'Cormorant',
   };
 
+  const [modalAgeOpen, setModalAgeOpen] = useState(true);
+
+  const modalAgeHandler = () => setModalAgeOpen(false);
+
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <ModalAge />
+      {modalAgeOpen && <ModalAge onConfirm={modalAgeHandler} />}
     </ThemeProvider>
   );
 }

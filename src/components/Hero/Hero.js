@@ -15,8 +15,8 @@ const Hero = () => {
         Selección de vinos de las mejores bodegas de mendoza.
       </StyledText>
       <ButtonsContainer>
-        <Button style={2} content='COMPRAR' />
-        <Button style={1} content='SABER MAS' />
+        <Button style={1} content='COMPRAR' />
+        <Button style={2} content='SABER MAS' />
       </ButtonsContainer>
     </StyledHero>
   );

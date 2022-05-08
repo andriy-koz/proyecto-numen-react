@@ -1,7 +1,7 @@
 import { GlobalStyles } from './components/GlobalStyle';
 import { ThemeProvider } from 'styled-components';
 import ModalAge from './components/ModalAge/ModalAge';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 function App() {
   const theme = {

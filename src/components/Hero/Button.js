@@ -16,21 +16,6 @@ const StyledButton = styled.button`
   }
 `;
 
-const StyledButton2 = styled.button`
-  color: #fff;
-  z-index: 99;
-  border: 1px solid #7e1b22;
-  background-color: #7e1b22;
-  padding: 10px 20px;
-  letter-spacing: 3px;
-  font-weight: 500;
-  &:hover {
-    cursor: pointer;
-    background-color: #826a45;
-    border: 1px solid #826a45;
-  }
-`;
-
 const Button = props => {
   if (props.style === 1)
     return <StyledButton red>{props.content}</StyledButton>;

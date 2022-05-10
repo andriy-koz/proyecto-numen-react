@@ -5,8 +5,6 @@ import vino4 from '../images/vino4.jpg';
 import { StyledCards, StyledWinesContainer } from '../styles/StyleWines';
 
 
-
-
 const  Wines = () =>{
 
 const winesImg = [

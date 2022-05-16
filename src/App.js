@@ -1,10 +1,12 @@
-
+import Form from './components/Form/Form';
+import GlobalStyle from './components/GlobalStyles';
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <>
+      <GlobalStyle />
+      <Form />
+    </>
   );
 }
 

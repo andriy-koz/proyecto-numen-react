@@ -37,6 +37,10 @@ export const StyledForm = styled.div`
   button:hover {
     cursor: pointer;
   }
+  button:disabled {
+    background-color: #777;
+    cursor: not-allowed;
+  }
 `;
 
 export const LayoutDiv = styled.div`

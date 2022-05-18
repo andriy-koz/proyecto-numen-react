@@ -1,32 +1,65 @@
 import { StyledInput } from './Input.styled';
-import React, { useState } from 'react';
+import React, { useReducer } from 'react';
+
+const initialState = {
+  name: { value: '', valid: true, touched: false },
+  lastName: { value: '', valid: true, touched: false },
+  email: { value: '', valid: true, touched: false },
+};
+
+const inputReducer = (state, action) => {
+  const validation = state[action.id].value !== '';
+
+  if (action.type === 'CHANGE') {
+    state[action.id] = {
+      value: action.value,
+      valid: validation,
+      touched: state[action.id].touched,
+    };
+    return state;
+  }
+  if (action.type === 'BLUR') {
+    state[action.id] = {
+      value: state[action.id].value,
+      valid: validation,
+      touched: true,
+    };
+    return state;
+  }
+  if (action.type === 'RESET') {
+    for (const key in state) {
+      state[key].value = '';
+      state[key].touched = false;
+    }
+    return state;
+  }
+  return inputReducer;
+};
 
 const Input = props => {
-  const [value, setValue] = useState('');
-  const [hasError, setHasError] = useState(false);
-  const valueIsValid = value !== '';
+  const [state, dispatch] = useReducer(inputReducer, initialState);
 
-  const onChangeHandler = e => {
-    setValue(e.target.value);
-    setHasError(false);
-  };
-  const onBlurHandler = () => {
-    setHasError(!valueIsValid);
-  };
-
-  props.hasError(hasError);
+  console.log(state);
 
   return (
     <StyledInput>
+      <button
+        type='button'
+        onClick={() => dispatch({ type: 'RESET', id: props.id })}>
+        Resetear
+      </button>
       <label htmlFor={props.id}>{props.label}</label>
       <input
         type={props.type}
         id={props.id}
-        value={value}
-        onChange={onChangeHandler}
-        onBlur={onBlurHandler}
+        onChange={e => {
+          dispatch({ type: 'CHANGE', value: e.target.value, id: props.id });
+        }}
+        onBlur={() => {
+          dispatch({ type: 'BLUR', id: props.id });
+        }}
       />
-      {hasError && <p>Invalid</p>}
+      {<p>Invalid</p>}
     </StyledInput>
   );
 };

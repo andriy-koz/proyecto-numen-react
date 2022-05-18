@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   InputLayoutDiv,
   LayoutDiv,
@@ -8,27 +7,6 @@ import {
 import Input from './Input';
 
 const Form = () => {
-  let nameHasError = true;
-  let lastNameHasError = true;
-  let emailHasError = true;
-
-  const nameHasErrorHandler = hasError => {
-    nameHasError = hasError;
-  };
-  const lastNameHasErrorHandler = hasError => {
-    lastNameHasError = hasError;
-  };
-  const emailHasErrorHandler = hasError => {
-    emailHasError = hasError;
-  };
-
-  const submitHandler = e => {
-    e.preventDefault();
-    if (!nameHasError && !lastNameHasError && !emailHasError) {
-      console.log('Submitted');
-    } else return;
-  };
-
   return (
     <StyledForm>
       <FormContainer>
@@ -36,27 +14,12 @@ const Form = () => {
           <h3>Unite a nuestra Lista VIP</h3>
           <p>Recibe novedades, ofertas e invitaciones exclusivas!</p>
         </LayoutDiv>
-        <form onSubmit={submitHandler}>
+        <form>
           <InputLayoutDiv>
-            <Input
-              label='Nombre'
-              id='name'
-              type='text'
-              hasError={nameHasErrorHandler}
-            />
-            <Input
-              label='Apellido'
-              id='lastName'
-              type='text'
-              hasError={lastNameHasErrorHandler}
-            />
+            <Input label='Nombre' id='name' type='text' />
+            <Input label='Apellido' id='lastName' type='text' />
           </InputLayoutDiv>
-          <Input
-            label='Email'
-            id='email'
-            type='email'
-            hasError={emailHasErrorHandler}
-          />
+          <Input label='Email' id='email' type='email' />
           <button>ENVIAR</button>
         </form>
       </FormContainer>

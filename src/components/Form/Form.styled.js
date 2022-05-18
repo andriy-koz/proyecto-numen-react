@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Container } from '../helpers/Container';
 
 export const StyledForm = styled.div`
   color: #fff;
@@ -17,6 +18,12 @@ export const StyledForm = styled.div`
     margin-top: 16px;
     margin-bottom: 14px;
   }
+  form {
+    max-width: 530px;
+    @media (min-width: 1024px) {
+      width: 530px;
+    }
+  }
   button {
     background-color: #826a45;
     color: #fff;
@@ -32,6 +39,24 @@ export const StyledForm = styled.div`
   }
 `;
 
-export const LayoutDiv = styled.div``;
+export const LayoutDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
 
-export const InputLayoutDiv = styled.div``;
+export const InputLayoutDiv = styled.div`
+  @media (min-width: 572px) {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+`;
+
+export const FormContainer = styled(Container)`
+  @media (min-width: 1024px) {
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+  }
+`;

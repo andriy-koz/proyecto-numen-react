@@ -39,7 +39,9 @@ const inputReducer = (state, action) => {
 const Input = props => {
   const [state, dispatch] = useReducer(inputReducer, initialState);
 
-  console.log(state);
+  const hasError = !state[props.id].valid && state[props.id].touched;
+
+  console.log(hasError);
 
   return (
     <StyledInput>
@@ -59,7 +61,7 @@ const Input = props => {
           dispatch({ type: 'BLUR', id: props.id });
         }}
       />
-      {<p>Invalid</p>}
+      {hasError && <p>has error</p>}
     </StyledInput>
   );
 };

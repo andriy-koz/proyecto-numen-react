@@ -1,29 +1,40 @@
-import { useReducer } from 'react';
-
-const initialState = {};
+import { useReducer, useCallback } from 'react';
 
 const reducerFunction = (state, action) => {
   if (action.type === 'ON_CHANGE') {
-    return {
-      ...state,
-      [state[action.id]]: {
-        val: action.val,
-        touched: state[action.id]?.touched ?? false,
-        valid: state[action.id]?.valid ?? false,
-      },
-    };
+    state[action.id].val = action.val;
+    return state;
+  }
+  if (action.type === 'ON_BLUR') {
+    state[action.id].touched = true;
+    return state;
   }
   return state;
 };
 
-const useForm = () => {
-  const [state, dispatch] = useReducer(reducerFunction, initialState);
+const useForm = inputIds => {
+  const initialState = useCallback(ids => {
+    const myState = {};
+    ids.forEach(id => {
+      myState[id] = {
+        val: '',
+        touched: false,
+        valid: false,
+        hasError: false,
+      };
+    });
+    return myState;
+  }, []);
+
+  const [state, dispatch] = useReducer(reducerFunction, initialState(inputIds));
 
   const onInputChange = (value, id) => {
     dispatch({ type: 'ON_CHANGE', val: value, id: id });
   };
 
-  const onInputBlur = () => {};
+  const onInputBlur = id => {
+    dispatch({ type: 'ON_BLUR', id: id });
+  };
 
   const onFormSubmit = () => {};
 

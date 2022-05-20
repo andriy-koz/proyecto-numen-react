@@ -5,8 +5,13 @@ import {
   FormContainer,
 } from './Form.styled';
 import Input from './Input';
+import useForm from '../../hooks/use-form';
 
 const Form = () => {
+  const [state, onInputChange, onInputBlur, onFormSubmit] = useForm();
+
+  console.log(state);
+
   return (
     <StyledForm>
       <FormContainer>
@@ -16,7 +21,12 @@ const Form = () => {
         </LayoutDiv>
         <form>
           <InputLayoutDiv>
-            <Input label='Nombre' id='name' type='text' />
+            <Input
+              onChange={onInputChange}
+              label='Nombre'
+              id='name'
+              type='text'
+            />
             <Input label='Apellido' id='lastName' type='text' />
           </InputLayoutDiv>
           <Input label='Email' id='email' type='email' />

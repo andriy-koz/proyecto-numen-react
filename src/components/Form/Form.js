@@ -22,29 +22,29 @@ const Form = () => {
           <p>Recibe novedades, ofertas e invitaciones exclusivas!</p>
         </LayoutDiv>
         <form>
-          <InputLayoutDiv>
-            <Input
-              label='Nombre'
-              id='name'
-              type='text'
-              value={state.name.val}
-              onChange={onInputChange}
-            />
-            <Input
-              label='Apellido'
-              id='lastName'
-              type='text'
-              value={state.lastName.val}
-              onChange={onInputChange}
-            />
-          </InputLayoutDiv>
+          {/* <InputLayoutDiv> */}
           <Input
+            label='Nombre'
+            id='name'
+            type='text'
+            val={state.name.val}
+            onChange={onInputChange}
+          />
+          {/* <Input
+            label='Apellido'
+            id='lastName'
+            type='text'
+            val={state.lastName.val}
+            onChange={onInputChange}
+          /> */}
+          {/* </InputLayoutDiv> */}
+          {/* <Input
             label='Email'
             id='email'
             type='email'
-            value={state.email.val}
+            val={state.email.val}
             onChange={onInputChange}
-          />
+          /> */}
           <button>ENVIAR</button>
         </form>
       </FormContainer>

@@ -31,7 +31,6 @@ export const StyledForm = styled.div`
     font-weight: 500;
     border-radius: 4px;
     letter-spacing: 1.2px;
-    margin-top: 4px;
     padding: 8px 18px;
   }
   button:hover {

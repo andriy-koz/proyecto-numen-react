@@ -21,7 +21,10 @@ const Form = () => {
           <h3>Unite a nuestra Lista VIP</h3>
           <p>Recibe novedades, ofertas e invitaciones exclusivas!</p>
         </LayoutDiv>
-        <form>
+        <form
+          onSubmit={e => {
+            onFormSubmit(e);
+          }}>
           <InputLayoutDiv>
             <Input
               label='Nombre'
@@ -29,6 +32,8 @@ const Form = () => {
               type='text'
               val={state.name.val}
               onChange={onInputChange}
+              onBlur={onInputBlur}
+              hasError={state.name.hasError}
             />
             <Input
               label='Apellido'
@@ -36,6 +41,8 @@ const Form = () => {
               type='text'
               val={state.lastName.val}
               onChange={onInputChange}
+              onBlur={onInputBlur}
+              hasError={state.lastName.hasError}
             />
           </InputLayoutDiv>
           <Input
@@ -44,6 +51,8 @@ const Form = () => {
             type='email'
             val={state.email.val}
             onChange={onInputChange}
+            onBlur={onInputBlur}
+            hasError={state.email.hasError}
           />
           <button>ENVIAR</button>
         </form>

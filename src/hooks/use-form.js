@@ -2,12 +2,14 @@ import { useReducer, useCallback } from 'react';
 
 const reducerFunction = (state, action) => {
   if (action.type === 'ON_CHANGE') {
-    state[action.id].val = action.val;
-    return state;
+    let newState = { ...state };
+    newState[action.id].val = action.val;
+    return newState;
   }
   if (action.type === 'ON_BLUR') {
-    state[action.id].touched = true;
-    return state;
+    let newState = { ...state };
+    newState[action.id].touched = true;
+    return newState;
   }
   return state;
 };

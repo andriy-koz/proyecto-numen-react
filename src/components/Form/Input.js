@@ -13,7 +13,7 @@ const Input = props => {
           props.onChange(e.target.value, props.id);
         }}
         // onBlur={() => {}}
-        // value={props.val}
+        value={props.val}
       />
     </StyledInput>
   );

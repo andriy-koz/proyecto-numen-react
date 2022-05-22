@@ -21,6 +21,13 @@ const reducerFunction = (state, action) => {
   }
 };
 
+const formValidate = state => {
+  for (const key in state) {
+    if (!state[key].val) return false;
+  }
+  return true;
+};
+
 const useForm = inputIds => {
   const initialState = useCallback(ids => {
     const myState = {};
@@ -28,7 +35,6 @@ const useForm = inputIds => {
       myState[id] = {
         val: '',
         touched: false,
-        valid: false,
         hasError: false,
       };
     });
@@ -47,6 +53,7 @@ const useForm = inputIds => {
 
   const onFormSubmit = e => {
     e.preventDefault();
+    if (!validForm) return;
     dispatch({ type: 'RESET' });
   };
 
@@ -61,7 +68,9 @@ const useForm = inputIds => {
     }
   }
 
-  return [state, onInputChange, onInputBlur, onFormSubmit];
+  const validForm = formValidate(state);
+
+  return [state, onInputChange, onInputBlur, onFormSubmit, validForm];
 };
 
 export default useForm;

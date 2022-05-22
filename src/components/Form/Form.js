@@ -8,7 +8,7 @@ import Input from './Input';
 import useForm from '../../hooks/use-form';
 
 const Form = () => {
-  const [state, onInputChange, onInputBlur, onFormSubmit] = useForm([
+  const [state, onInputChange, onInputBlur, onFormSubmit, validForm] = useForm([
     'name',
     'lastName',
     'email',
@@ -54,7 +54,7 @@ const Form = () => {
             onBlur={onInputBlur}
             hasError={state.email.hasError}
           />
-          <button>ENVIAR</button>
+          <button disabled={!validForm}>ENVIAR</button>
         </form>
       </FormContainer>
     </StyledForm>

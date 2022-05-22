@@ -1,13 +1,12 @@
-import Button from '@material-ui/core/Button'
+import styledComponents from "styled-components";
+import Button from '@mui/material/Button'
 
 
 function App() {
   return (
-    <div>
-      <Button variant="contained" color="inherit">
-        Learn More 
-      </Button>
-    </div>
+    <Button variant="contained" color="inherit">
+      Learn More
+    </Button>
   );
 }
 

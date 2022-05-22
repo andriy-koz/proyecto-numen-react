@@ -2,6 +2,7 @@ import { GlobalStyles } from './components/GlobalStyle';
 import { ThemeProvider } from 'styled-components';
 import Hero from './components/Hero/Hero';
 
+
 function App() {
   const theme = {
     color: {

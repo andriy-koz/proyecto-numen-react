@@ -1,9 +1,12 @@
+import Button from '@material-ui/core/Button'
 
 
 function App() {
   return (
-    <div className="App">
-      
+    <div>
+      <Button variant="contained" color="inherit">
+        Learn More 
+      </Button>
     </div>
   );
 }

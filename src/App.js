@@ -1,13 +1,17 @@
-import styledComponents from "styled-components";
-import Button from '@mui/material/Button'
-
+import React from "react";
+import "./styles.css";
+import styled from "styled-components"
 
 function App() {
-  return (
-    <Button variant="contained" color="inherit">
-      Learn More
-    </Button>
-  );
+  const Container = styled.div`
+  
+  `;  
+  
+ return (
+  <Container>
+
+  </Container>
+ );
 }
 
 export default App;

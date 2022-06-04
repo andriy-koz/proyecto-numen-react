@@ -8,5 +8,6 @@ export const GlobalStyles = createGlobalStyle`
 
 body{
   font-family: ${props => props.theme.font}, sans-serif;
+  font-family: 'Roboto Flex', sans-serif;
   overflow-x: hidden;
 }`;

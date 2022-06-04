@@ -1,5 +1,4 @@
-import Carousel from "./Components/Carousel";
-import { ThemeProvider } from "styled-components";
+import { ThemeProvider } from 'styled-components';
 
 const theme = {
   colors: {
@@ -23,12 +22,9 @@ const theme = {
 };
 
 function App() {
-
   return (
-    <div className="App">
-    <ThemeProvider theme={theme}>
-      <Carousel/>
-    </ThemeProvider>
+    <div className='App'>
+      <ThemeProvider theme={theme}></ThemeProvider>
     </div>
   );
 }

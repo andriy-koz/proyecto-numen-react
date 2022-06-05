@@ -6,7 +6,7 @@
 html,
 body {
   font-size: 18px;
-  background-color: #f5f6f7;
+  background-image: linear-gradient(to bottom, #ffffff, #faf9fc, #f4f3f9, #efeef5, #eae8f2);
 }
 
 h1 {

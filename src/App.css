@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 18px;
+  background-color: #f5f6f7;
+}
+
+h1 {
+  max-width: 940px;
+  font-size: 3rem;
+  font-family: "Poppins";
+  font-weight: 700;
+  color: #330b1e;
+  line-height: 1.1;
+  margin: 40px 0;
+  text-shadow: 5px 8px 10px rgba(74, 1, 74, 0.502);
+}
+
+.App {
+  min-height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contenedor-principal {
+  min-height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}

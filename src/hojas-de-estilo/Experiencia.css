@@ -1,0 +1,84 @@
+.contenedor-experiencia {
+  width: 1100px;
+  height: 250px;
+  margin: 3px 3px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e7e7;
+  background-image: white;
+}
+.contenedor-experiencia:hover {
+  transform: scale(1.02);
+  transition: 1.2s;
+  cursor: pointer;
+}
+
+.imagen-experiencia {
+  height: 90%;
+  width: auto;
+  margin-left: 1rem;
+  border-radius: 2px;
+}
+
+.contenedor-texto-experiencia {
+  text-align: center;
+  padding: 60px;
+  font-weight: bolder;
+  line-height: 1.3rem;
+}
+
+.texto-oferta {
+  margin-top: 30px;
+  margin-left: 38%;
+  font-size: 14px;
+  display: flex;
+  color: #4b4b4b;
+}
+
+.comprar {
+  display: flex;
+  margin-top: -6.5%;
+  border: none;
+  background-color: #f2ca03;
+  color: rgb(0, 0, 0);
+  border-color: #000000;
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 20px;
+  margin-left: 85%;
+  margin-bottom: 20px;
+}
+
+.comprar:hover {
+  background-color: #fddf1b;
+  border-color: #fddf1b;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.nombre-experiencia {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 20px;
+  color: #000000;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.nombre-experiencia:hover {
+  margin-bottom: 1rem;
+  margin-top: 20px;
+  color: #781e1e;
+  font-style: italic;
+}
+
+.texto-experiencia {
+  font-size: 15px;
+  text-align: justify;
+  color: rgb(0, 42, 78);
+}
+
+hr {
+  margin-bottom: 10px;
+}

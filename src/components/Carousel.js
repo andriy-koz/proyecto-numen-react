@@ -17,18 +17,18 @@ import zuccardi from '../images/zuccardi.jpg';
 const handleDragStart = e => e.preventDefault();
 
 const items = [
-  <img alt='' src={alpamanta} onDragStart={handleDragStart} />,
-  <img alt='' src={atamisque} onDragStart={handleDragStart} />,
-  <img alt='' src={bianchi} onDragStart={handleDragStart} />,
-  <img alt='' src={catenaZapata} onDragStart={handleDragStart} />,
-  <img alt='' src={escorihuelaGascon} onDragStart={handleDragStart} />,
-  <img alt='' src={estanciaMendoza} onDragStart={handleDragStart} />,
-  <img alt='' src={salentein} onDragStart={handleDragStart} />,
-  <img alt='' src={septimaVista} onDragStart={handleDragStart} />,
-  <img alt='' src={suter} onDragStart={handleDragStart} />,
-  <img alt='' src={tierrasAltas} onDragStart={handleDragStart} />,
-  <img alt='' src={trivento} onDragStart={handleDragStart} />,
-  <img alt='' src={zuccardi} onDragStart={handleDragStart} />,
+  <img alt='' className='carousel-img' src={alpamanta} onDragStart={handleDragStart} />,
+  <img alt='' className='carousel-img' src={atamisque} onDragStart={handleDragStart} />,
+  <img alt='' className='carousel-img' src={bianchi} onDragStart={handleDragStart} />,
+  <img alt='' className='carousel-img' src={catenaZapata} onDragStart={handleDragStart} />,
+  <img alt='' className='carousel-img' src={escorihuelaGascon} onDragStart={handleDragStart} />,
+  <img alt='' className='carousel-img' src={estanciaMendoza} onDragStart={handleDragStart} />,
+  <img alt='' className='carousel-img' src={salentein} onDragStart={handleDragStart} />,
+  <img alt='' className='carousel-img' src={septimaVista} onDragStart={handleDragStart} />,
+  <img alt='' className='carousel-img' src={suter} onDragStart={handleDragStart} />,
+  <img alt='' className='carousel-img' src={tierrasAltas} onDragStart={handleDragStart} />,
+  <img alt='' className='carousel-img' src={trivento} onDragStart={handleDragStart} />,
+  <img alt='' className='carousel-img' src={zuccardi} onDragStart={handleDragStart} />,
 ];
 
 const responsive = {

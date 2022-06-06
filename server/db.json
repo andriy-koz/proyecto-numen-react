@@ -1,0 +1,47 @@
+{
+    "vinos": [
+        {
+            "id": 1,
+            "nombre": , //COMPLETAR//
+            "precio" //COMPLETAR//
+        },
+        {
+            "id": 2,
+            "nombre": , //COMPLETAR//
+            "precio" //COMPLETAR//
+        },
+        {
+            "id": 3,
+            "nombre": , //COMPLETAR//
+            "precio" //COMPLETAR//
+        },
+        {
+            "id": 4,
+            "nombre": , //COMPLETAR//
+            "precio" //COMPLETAR//
+        },
+    ]
+,
+"Bodegas": [
+    {
+        "id": 1,
+        "nombre": , //COMPLETAR//
+        "direccion" //COMPLETAR//
+    },
+    {
+        "id": 2,
+        "nombre": , //COMPLETAR//
+        "direccion" //COMPLETAR//
+    },
+    {
+        "id": 3,
+        "nombre": , //COMPLETAR//
+        "direccion" //COMPLETAR//
+    },
+    {
+        "id": 4,
+        "nombre": , //COMPLETAR//
+        "direccion" //COMPLETAR//
+    }
+]
+}

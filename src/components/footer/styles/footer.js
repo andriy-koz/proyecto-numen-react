@@ -2,21 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   padding: 20px 10px;
-  background: linear-gradient(
-    to top,
-    #9d00ff,
-    #8014ce,
-    #64199e,
-    #4a1971,
-    #311547,
-    #261336,
-    #1c0f25,
-    #110815,
-    #110815,
-    #110815,
-    #110815,
-    #110815
-  );
+  background-image: radial-gradient(circle at 20.12% -14.09%, #613831 0, #5f312e 10%, #5c292b 20%, #592029 30%, #551627 40%, #500825 50%, #4a0024 60%, #440024 70%, #3d0025 80%, #370027 90%, #30002a 100%);
+  ;
 
   @media (max-width: 768px) {
     padding: 20px 30px;

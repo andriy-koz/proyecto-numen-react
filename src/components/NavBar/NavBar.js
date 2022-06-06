@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { StyledNavBar, IconsContainer, StyledLogo } from './NavBar.styled';
+import { StyledNavBar, IconsContainer, StyledImg } from './NavBar.styled';
 import logo from '../../images/numen.png';
 import Links from './Links';
 import SearchInput from './SearchInput';
@@ -44,7 +44,7 @@ const NavBar = () => {
 
   return (
     <StyledNavBar>
-      <StyledLogo src={logo} alt='Numen logo' />
+      <StyledImg src={logo} alt='Numen logo'></StyledImg>
       <Links />
       <IconsContainer>
         <SearchInput opened={openedSearch} />

@@ -19,16 +19,18 @@ export const IconsContainer = styled.div`
   display: flex;
   gap: 15px;
   @media (min-width: 768px) {
-    align-self: flex-end;
-    margin-top: 20px;
+    display: none;
   }
 `;
 
-export const StyledLogo = styled.img`
-  height: 50px;
-  @media (min-width: 768px) {
-    height: 300px;
-    width: 350px;
-    order: 2;
-  }
+
+
+export const StyledImg = styled.img`
+  object-fit: cover;
+  width:100px;
+  height: 95px;
+  padding-top: 13px;
+  display: flex;
+  align-self: flex-start;
+  
 `;

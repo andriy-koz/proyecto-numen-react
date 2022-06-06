@@ -1,0 +1,47 @@
+{
+    "vinos": [
+        {
+            "id": 1,
+            "nombre": "uno",
+            "precio": 1000
+        },
+        {
+            "id": 2,
+            "nombre": "dos",
+            "precio": 2000
+        },
+        {
+            "id": 3,
+            "nombre": "tres",
+            "precio": 3000
+        },
+        {
+            "id": 4,
+            "nombre": "cuatro",
+            "precio": 4000
+        }
+    ]
+,
+"Bodegas": [
+    {
+        "id": 1,
+        "nombre": "primero",
+        "direccion": 101
+    },
+    {
+        "id": 2,
+        "nombre": "segundo",
+        "direccion": 102
+    },
+    {
+        "id": 3,
+        "nombre": "tercero",
+        "direccion": 103
+    },
+    {
+        "id": 4,
+        "nombre": "cuarto",
+        "direccion": 104
+    }
+]
+}

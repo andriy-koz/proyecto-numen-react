@@ -7,6 +7,7 @@ export const StyledHero = styled.div`
   max-width: 1320px;
   margin: 0 auto;
   position: relative;
+
 `;
 
 export const StyledOverlay = styled.div`

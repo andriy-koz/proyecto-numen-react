@@ -2,46 +2,46 @@
     "vinos": [
         {
             "id": 1,
-            "nombre": , //COMPLETAR//
-            "precio" //COMPLETAR//
+            "nombre": "uno",
+            "precio": 1000
         },
         {
             "id": 2,
-            "nombre": , //COMPLETAR//
-            "precio" //COMPLETAR//
+            "nombre": "dos",
+            "precio": 2000
         },
         {
             "id": 3,
-            "nombre": , //COMPLETAR//
-            "precio" //COMPLETAR//
+            "nombre": "tres",
+            "precio": 3000
         },
         {
             "id": 4,
-            "nombre": , //COMPLETAR//
-            "precio" //COMPLETAR//
-        },
+            "nombre": "cuatro",
+            "precio": 4000
+        }
     ]
 ,
 "Bodegas": [
     {
         "id": 1,
-        "nombre": , //COMPLETAR//
-        "direccion" //COMPLETAR//
+        "nombre": "primero",
+        "direccion": 101
     },
     {
         "id": 2,
-        "nombre": , //COMPLETAR//
-        "direccion" //COMPLETAR//
+        "nombre": "segundo",
+        "direccion": 102
     },
     {
         "id": 3,
-        "nombre": , //COMPLETAR//
-        "direccion" //COMPLETAR//
+        "nombre": "tercero",
+        "direccion": 103
     },
     {
         "id": 4,
-        "nombre": , //COMPLETAR//
-        "direccion" //COMPLETAR//
+        "nombre": "cuarto",
+        "direccion": 104
     }
 ]
 }

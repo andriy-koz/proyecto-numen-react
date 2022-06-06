@@ -38,7 +38,7 @@ const responsive = {
 };
 
 const Gallery = () => {
-  return (
+  return (<>
     <AliceCarousel
       mouseTracking
       items={items}
@@ -49,6 +49,7 @@ const Gallery = () => {
       autoPlay
       autoPlayInterval={2500}
     />
+    </>
   );
 };
 

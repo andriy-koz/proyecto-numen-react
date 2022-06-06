@@ -10,6 +10,7 @@ export const StyledWinesContainer = styled.div`
 `;
 
 export const StyledCards = styled.div`
+  
   width: 150px;
   height: 150px;
   border: 4px solid #500925;

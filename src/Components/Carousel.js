@@ -42,6 +42,8 @@ const responsive = {
 const Gallery = () => {
     return (
         <AliceCarousel 
+        disableButtonsControls
+        disableDotsControls
         mouseTracking
         items={items}
         paddingLeft={50}

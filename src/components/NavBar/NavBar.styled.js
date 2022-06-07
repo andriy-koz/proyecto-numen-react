@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledNavBar = styled.div`
   position: relative;
   background-color: ${props => props.theme.color.primary};
-  max-width: 1280px;
+  width: 100%;
   height: auto;
   margin: auto;
   padding: 0 20px;

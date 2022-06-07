@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+//METERLE DINAMISMO CUANDO LOS VINOS MAS VENDIDOS ESTEN HECHOS COLOCAR CON JS EL NOMBRE Y EL PRECIO DEL VINO SELECCIONADO//
+
 export const Modal = ({
   children,
   estado,
@@ -54,6 +56,7 @@ const Overlay = styled.div`
   align-items: ${props =>
     props.posicionModal ? props.posicionModal : 'center'};
   justify-content: center;
+  z-index:20000;
 `;
 const ContenedorModal = styled.div`
   width: 500px;
@@ -91,10 +94,10 @@ const BotonCerrar = styled.button`
   cursor: pointer;
   transition: 0.3s ease all;
   border-radius: 5px;
-  color: #1766dc;
+  color: #826a45;
 
   &:hover {
-    background: #f2f2f2;
+    color: #7e1b22;
   }
   svg {
     width: 100%;

@@ -35,9 +35,7 @@ export const StyledForm = styled.div`
     letter-spacing: 1.2px;
     padding: 8px 18px;
   }
-  button:hover {
-    cursor: pointer;
-  }
+
   button:disabled {
     background-color: #777;
     cursor: not-allowed;

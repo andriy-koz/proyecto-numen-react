@@ -20,7 +20,7 @@ export const StyledInput = styled.div`
     background-color: #161314;
   }
   input:hover {
-    cursor: pointer;
+    cursor: text;
   }
 
   p {

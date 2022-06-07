@@ -34,10 +34,9 @@ const Contador = ()  => {
 			>	
 				<Contenido>
 					<h1>CONFIRMAR COMPRA</h1>
-          <p>¿Está seguro que quiere comprar este producto?</p>				
-					{/*<img></img>*/}
-					<p></p>
-					<p>precio28.30</p>
+          <p>¿Está seguro que quiere comprar este producto?</p>
+					<p> Nombre</p>
+					<p>precio</p>
 					<Boton onClick={() => confirmarCompra()}>Confirmar</Boton>
 					<Boton onClick={() => cambiarEstadoModal1(!estadoModal1)}>Cancelar</Boton>
 				</Contenido>

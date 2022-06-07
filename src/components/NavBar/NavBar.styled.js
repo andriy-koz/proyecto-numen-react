@@ -28,10 +28,11 @@ export const IconsContainer = styled.div`
 
 export const StyledImg = styled.img`
   object-fit: cover;
-  width:100px;
-  height: 95px;
+  width:120px;
+  height: 100px;
   padding-top: 13px;
   display: flex;
-  align-self: flex-start;
+  align-self:center;
+  padding-bottom: 15px;
   
 `;

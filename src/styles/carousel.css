@@ -1,3 +1,7 @@
+.alice-carousel{
+  background-color: #161314;
+}
+
 .alice-carousel__prev-btn-item,
 .alice-carousel__next-btn-item {
   color: #500925;
@@ -28,7 +32,6 @@
 
 .alice-carousel__stage-item {
   margin: 10px;
-  border: solid #500925;
   overflow: hidden;
 }
 

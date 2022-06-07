@@ -9,6 +9,9 @@ const StyledCart = styled(StyledSlider)`
     color: ${props => props.theme.color.tertiary};
     font-weight: 500;
   }
+  @media(min-width: 768px) {
+    margin-top: 132px;
+  }
 `;
 
 const CartSlider = props => {

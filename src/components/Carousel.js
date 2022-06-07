@@ -17,18 +17,18 @@ import zuccardi from '../images/zuccardi.jpg';
 const handleDragStart = e => e.preventDefault();
 
 const items = [
-  <img alt='' className='carousel-img' src={alpamanta} onDragStart={handleDragStart} />,
-  <img alt='' className='carousel-img' src={atamisque} onDragStart={handleDragStart} />,
-  <img alt='' className='carousel-img' src={bianchi} onDragStart={handleDragStart} />,
-  <img alt='' className='carousel-img' src={catenaZapata} onDragStart={handleDragStart} />,
-  <img alt='' className='carousel-img' src={escorihuelaGascon} onDragStart={handleDragStart} />,
-  <img alt='' className='carousel-img' src={estanciaMendoza} onDragStart={handleDragStart} />,
-  <img alt='' className='carousel-img' src={salentein} onDragStart={handleDragStart} />,
-  <img alt='' className='carousel-img' src={septimaVista} onDragStart={handleDragStart} />,
-  <img alt='' className='carousel-img' src={suter} onDragStart={handleDragStart} />,
-  <img alt='' className='carousel-img' src={tierrasAltas} onDragStart={handleDragStart} />,
-  <img alt='' className='carousel-img' src={trivento} onDragStart={handleDragStart} />,
-  <img alt='' className='carousel-img' src={zuccardi} onDragStart={handleDragStart} />,
+  <img alt='Alpamanta' title='Alpamanta' className='carousel-img' src={alpamanta} onDragStart={handleDragStart} />,
+  <img alt='Atamisque' title='Atamisque' className='carousel-img' src={atamisque} onDragStart={handleDragStart} />,
+  <img alt='Bianchi' title='Bianchi' className='carousel-img' src={bianchi} onDragStart={handleDragStart} />,
+  <img alt='Catena Zapata' title='Catena Zapata' className='carousel-img' src={catenaZapata} onDragStart={handleDragStart} />,
+  <img alt='Escorihuela Gascón' title='Escorihuela Gascón' className='carousel-img' src={escorihuelaGascon} onDragStart={handleDragStart} />,
+  <img alt='Estancia Mendoza' title='Estancia Mendoza' className='carousel-img' src={estanciaMendoza} onDragStart={handleDragStart} />,
+  <img alt='Salentein' title='Salentein' className='carousel-img' src={salentein} onDragStart={handleDragStart} />,
+  <img alt='Septima Vista' title='Septima Vista' className='carousel-img' src={septimaVista} onDragStart={handleDragStart} />,
+  <img alt='Suter' title='Suter' className='carousel-img' src={suter} onDragStart={handleDragStart} />,
+  <img alt='Tierras Altas' title='Tierras Altas' className='carousel-img' src={tierrasAltas} onDragStart={handleDragStart} />,
+  <img alt='Trivento' title='Trivento' className='carousel-img' src={trivento} onDragStart={handleDragStart} />,
+  <img alt='Zuccardi' title='Zuccardi' className='carousel-img' src={zuccardi} onDragStart={handleDragStart} />,
 ];
 
 const responsive = {
@@ -39,8 +39,12 @@ const responsive = {
 
 const Gallery = () => {
   return (<>
+    <div className='contenedor-general'>
+    <h2 className='carousel-h2'>Nuestras bodegas</h2>
+    <h6 className='carousel-h6'>(Apoya el cursor para más información)</h6>
     <AliceCarousel
       disableButtonsControls
+      disableDotsControls
       mouseTracking
       items={items}
       paddingLeft={50}
@@ -50,6 +54,7 @@ const Gallery = () => {
       autoPlay
       autoPlayInterval={2500}
     />
+    </div>
     </>
   );
 };

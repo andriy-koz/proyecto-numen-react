@@ -1,12 +1,31 @@
 .alice-carousel{
   background-color: #161314;
+  padding-top: 20px;
+}
+
+.contenedor-general{
+  background-color: #161314;
+  padding: 20px;
+}
+
+.carousel-h2{
+  color: #fff;
+  text-align: center;
+  font-family:  'Cormorant', serif;
+  font-size: 38px;
+}
+.carousel-h6{
+  color: #fff;
+  text-align: center;
+  font-size: 10.8px;
+  
 }
 
 .alice-carousel__prev-btn-item,
 .alice-carousel__next-btn-item {
-  color: #500925;
+  color: #898da3;
   font-size: 15px;
-  border: solid 2px #500925;
+  border: solid 2px #898da3;
   border-radius: 100px;
 }
 
@@ -46,3 +65,4 @@ img {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
+

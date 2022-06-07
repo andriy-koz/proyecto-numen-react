@@ -50,7 +50,7 @@ const NavBar = () => {
   return (
     <StyledNavBar>
       <StyledImg src={logo} alt='Numen logo'></StyledImg>
-      <Links />
+      <Links onClick={cartHandler} counter={cont} />
       <IconsContainer>
         <SearchInput opened={openedSearch} />
         <Button type='search' opened={openedSearch} onClick={searchHandler} />
@@ -60,7 +60,7 @@ const NavBar = () => {
       </IconsContainer>
       <MenuSlider opened={openedMenu} />
       <UserSlider opened={openedUser} />
-      <CartSlider opened={openedCart} counter={2} />
+      <CartSlider opened={openedCart} counter={cont} />
     </StyledNavBar>
   );
 };

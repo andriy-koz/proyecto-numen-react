@@ -1,6 +1,7 @@
 import React from 'react';
 
 import styled from 'styled-components';
+import Button from './Button';
 
 export const myList = [
   'SOBRE NOSOTROS',
@@ -26,12 +27,13 @@ const StyledLinks = styled.ul`
   }
 `;
 
-const Links = () => {
+const Links = (props) => {
   return (
     <StyledLinks>
       {myList.map((link, index) => (
         <li key={index}>{link}</li>
       ))}
+      <Button type='cart' onClick={props.onClick} counter={props.counter} />
     </StyledLinks>
   );
 };

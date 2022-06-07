@@ -18,19 +18,16 @@ export const ContenedorBotones = styled.div`
 `;
 
 export const Boton = styled.button`
-	display: block;
-	padding: 15px 30px;
-	border-radius: 100px;
+	background: #7e1b22;
 	color: #fff;
-	border: none;
-	background: #1766DC;
-	cursor: pointer;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 500;
-	transition: .3s ease all;
-
+	padding: 10px 20px;
+  	letter-spacing: 3px;
+  	font-weight: 500;
+	border: 1px solid #7e1b22;
 	&:hover {
-		background: #0066FF;
+		cursor: pointer;
+		background-color: #826a45;
+		border: 1px solid #826a45;
 	}
 `;
 

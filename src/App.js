@@ -1,4 +1,4 @@
-import { createContext, useState } from 'react';
+import React, { createContext, useState } from 'react';
 import { GlobalStyles } from './components/GlobalStyle';
 import NavBar from './components/NavBar/NavBar';
 import { ThemeProvider } from 'styled-components';

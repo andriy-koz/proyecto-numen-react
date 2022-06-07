@@ -1,3 +1,5 @@
+import React from 'react';
+
 import styled from 'styled-components';
 import userIcon from '../../../images/user.svg';
 import { StyledSlider } from './StyledSlider';

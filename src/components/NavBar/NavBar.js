@@ -1,4 +1,4 @@
-import { useState, useEffect,useContext } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { StyledNavBar, IconsContainer, StyledImg } from './NavBar.styled';
 import logo from '../../images/numen.png';
 import Links from './Links';
@@ -8,7 +8,7 @@ import MenuSlider from './sliders/MenuSlider';
 import CartSlider from './sliders/CartSlider';
 import Button from './Button';
 import { ContadorContext } from '../../App';
- 
+
 
 
 const NavBar = () => {
@@ -17,7 +17,7 @@ const NavBar = () => {
   const [openedSearch, setOpenedSearch] = useState(false);
   const [openedCart, setOpenedCart] = useState(false);
 
-  const {cont} = useContext(ContadorContext);
+  const { cont } = useContext(ContadorContext);
 
   useEffect(() => {
     if (openedMenu) {

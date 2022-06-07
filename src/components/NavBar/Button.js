@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 import closeIcon from '../../images/close.svg';
 import searchIcon from '../../images/search.svg';
@@ -42,12 +43,12 @@ const Button = props => {
     props.type === 'search'
       ? searchIcon
       : props.type === 'user'
-      ? userIcon
-      : props.type === 'menu'
-      ? menuIcon
-      : props.type === 'cart'
-      ? cartIcon
-      : null;
+        ? userIcon
+        : props.type === 'menu'
+          ? menuIcon
+          : props.type === 'cart'
+            ? cartIcon
+            : null;
 
   return (
     <Container menu={props.type === 'menu'} onClick={props.onClick}>

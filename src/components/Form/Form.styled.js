@@ -3,7 +3,7 @@ import { Container } from '../helpers/Container';
 
 export const StyledForm = styled.div`
   margin: 0 auto;
-  max-width: 1200px;
+  width: 100%;
   color: #fff;
   background-color: #161314;
   padding: 40px 15px;

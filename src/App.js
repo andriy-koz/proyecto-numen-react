@@ -51,7 +51,6 @@ function App() {
       <ContadorContext.Provider value={{ cont, setCount }}>
         <NavBar />
         <Hero />
-        <Contador />
         <Wines />
         <Gallery />
         <Form />

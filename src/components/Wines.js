@@ -4,6 +4,8 @@ import vino2 from '../images/vino2.jpg';
 import vino3 from '../images/vino3.jpg';
 import vino4 from '../images/vino4.jpg';
 import { StyledCards, StyledWinesContainer } from '../styles/StyledWines';
+import Contador from './Contador/Contador';
+
 
 const Wines = () => {
   const winesImg = [
@@ -13,14 +15,16 @@ const Wines = () => {
     <img src={vino4} alt='vino4' title='vino4' />,
   ];
   //EN DONDE DICE TITLE (en las img) PONER EL NOMBRE DE LOS VINOS//
-  const winesMap = winesImg.map(item => <StyledCards>{item}</StyledCards>);
+  const winesMap = winesImg.map(item => <StyledCards>{item}<Contador /></StyledCards>);
 
   return (
     <div
       style={{
+        color: '#fff',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
+        backgroundColor: '#161314',
       }}>
       <h2>VINOS MÁS VENDIDOS DEL MES</h2>
       <h3>Top Selling Wines this Month</h3>

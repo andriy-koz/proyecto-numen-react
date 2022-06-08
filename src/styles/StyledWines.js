@@ -10,8 +10,8 @@ export const StyledWinesContainer = styled.div`
 `;
 
 export const StyledCards = styled.div`
-  width: 200px;
-  height: 350px; 
+  width: 250px;
+  height: 400px; 
   margin: 20px;
   padding: 20px;
   background-color: #201D1E;

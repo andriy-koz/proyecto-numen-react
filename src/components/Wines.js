@@ -25,7 +25,7 @@ const Wines = () => {
         flexDirection: 'column',
         alignItems: 'center',
         backgroundColor: '#161314',
-        paddingTop: '20px',
+        paddingTop: '30px',
       }}>
       <h2>VINOS MÁS VENDIDOS DEL MES</h2>
       <h3>Top Selling Wines this Month</h3>

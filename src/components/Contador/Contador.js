@@ -36,7 +36,7 @@ const Contador = ()  => {
 					<h1>CONFIRMAR COMPRA</h1>
           <p>¿Está seguro que quiere comprar este producto?</p>
 					<p> Prod.</p>
-					<p>Precio: $</p>
+					<p>Precio: </p>
 					<Boton onClick={() => confirmarCompra()}>Confirmar</Boton>
 					<Boton onClick={() => cambiarEstadoModal1(!estadoModal1)}>Cancelar</Boton>
 				</Contenido>

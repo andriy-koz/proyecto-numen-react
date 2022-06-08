@@ -1,28 +1,24 @@
 import styled from 'styled-components';
 
 export const StyledWinesContainer = styled.div`
-background-color: #161314;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  background-color: #161314;
+  display: flex;
   justify-items: center;
   align-items: center;
-  column-gap: 100px;
-  
+  flex-wrap:wrap;
   width: 100%;
 `;
 
 export const StyledCards = styled.div`
-  /* width: 150px;
-  height: 150px; */
+  width: 200px;
+  height: 350px; 
   margin: 20px;
   padding: 20px;
   background-color: #201D1E;
   img {
-    width: 100%;
-    height: 100%;
+    width:80%;
+    height: 80%;
+    margin-left: 20px;
   }
-  button {
-
-  }
+  
 `;

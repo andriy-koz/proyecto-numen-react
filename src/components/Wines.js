@@ -15,8 +15,8 @@ const Wines = () => {
     <img src={vino4} alt='vino4' title='vino4' />,
   ];
   //EN DONDE DICE TITLE (en las img) PONER EL NOMBRE DE LOS VINOS//
-  const winesMap = winesImg.map(item => <StyledCards>{item}<Contador /></StyledCards>);
-
+  const winesMap = winesImg.map(item => <StyledCards>{item} <Contador/></StyledCards>);
+//DEBAJO DE WINES MAP EN EL RETURN, IRIA EL MAPEO DE LOS NOMBRES Y EL PRECIO
   return (
     <div
       style={{
@@ -28,7 +28,12 @@ const Wines = () => {
       }}>
       <h2>VINOS MÁS VENDIDOS DEL MES</h2>
       <h3>Top Selling Wines this Month</h3>
-      <StyledWinesContainer>{winesMap}</StyledWinesContainer>
+      <div>
+        <StyledWinesContainer>
+          {winesMap}
+          
+        </StyledWinesContainer>
+      </div>
     </div>
   );
 };

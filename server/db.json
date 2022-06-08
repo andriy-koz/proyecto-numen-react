@@ -20,28 +20,27 @@
             "nombre": "cuatro",
             "precio": 4000
         }
+    ],
+    "Bodegas": [
+        {
+            "id": 1,
+            "nombre": "primero",
+            "direccion": 101
+        },
+        {
+            "id": 2,
+            "nombre": "segundo",
+            "direccion": 102
+        },
+        {
+            "id": 3,
+            "nombre": "tercero",
+            "direccion": 103
+        },
+        {
+            "id": 4,
+            "nombre": "cuarto",
+            "direccion": 104
+        }
     ]
-,
-"Bodegas": [
-    {
-        "id": 1,
-        "nombre": "primero",
-        "direccion": 101
-    },
-    {
-        "id": 2,
-        "nombre": "segundo",
-        "direccion": 102
-    },
-    {
-        "id": 3,
-        "nombre": "tercero",
-        "direccion": 103
-    },
-    {
-        "id": 4,
-        "nombre": "cuarto",
-        "direccion": 104
-    }
-]
 }

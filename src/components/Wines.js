@@ -3,7 +3,7 @@ import vino1 from '../images/vino1.jpg';
 import vino2 from '../images/vino2.jpg';
 import vino3 from '../images/vino3.jpg';
 import vino4 from '../images/vino4.jpg';
-import { StyledCards, StyledWinesContainer } from '../styles/StyledWines';
+import { ImgText, StyledCards, StyledWinesContainer } from '../styles/StyledWines';
 import Contador from './Contador/Contador';
 
 
@@ -15,7 +15,7 @@ const Wines = () => {
     <img src={vino4} alt='vino4' title='vino4' />,
   ];
   //EN DONDE DICE TITLE (en las img) PONER EL NOMBRE DE LOS VINOS//
-  const winesMap = winesImg.map(item => <StyledCards>{item} <Contador/></StyledCards>);
+  const winesMap = winesImg.map(item => <StyledCards>{item} <ImgText>Prod.:</ImgText><ImgText>Precio: $</ImgText> <Contador/></StyledCards>);
 //DEBAJO DE WINES MAP EN EL RETURN, IRIA EL MAPEO DE LOS NOMBRES Y EL PRECIO
   return (
     <div
@@ -23,16 +23,16 @@ const Wines = () => {
         color: '#fff',
         display: 'flex',
         flexDirection: 'column',
+        paddingLeft: '47px',
         alignItems: 'center',
         backgroundColor: '#161314',
         paddingTop: '30px',
       }}>
-      <h2>VINOS MÁS VENDIDOS DEL MES</h2>
-      <h3>Top Selling Wines this Month</h3>
+      <h2>Vinos más vendidos del mes</h2>
+      <h4>Top Selling Wines this Month</h4>
       <div>
         <StyledWinesContainer>
           {winesMap}
-          
         </StyledWinesContainer>
       </div>
     </div>

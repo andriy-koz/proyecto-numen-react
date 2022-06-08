@@ -20,5 +20,9 @@ export const StyledCards = styled.div`
     height: 80%;
     margin-left: 20px;
   }
-  
 `;
+
+export const ImgText = styled.h5`
+  text-align: center;
+  margin-top: 5px;
+`

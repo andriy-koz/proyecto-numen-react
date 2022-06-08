@@ -5,13 +5,12 @@
 
 .contenedor-general{
   background-color: #161314;
-  padding: 20px;
+  padding-top: 60px;
 }
 
 .carousel-h2{
   color: #fff;
   text-align: center;
-  font-family:  'Cormorant', serif;
   font-size: 38px;
 }
 .carousel-h6{

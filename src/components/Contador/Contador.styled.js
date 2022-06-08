@@ -17,6 +17,23 @@ export const ContenedorBotones = styled.div`
 	gap: 20px;
 `;
 
+export const BotonAdd = styled.button`
+	background: #7e1b22;
+	color: #fff;
+	padding: 10px;
+  	letter-spacing: 3px;
+  	font-weight: 500;
+	border: 1px solid #7e1b22;
+	margin: 10px;
+	align-self:center;
+	margin-top: -30px;
+	&:hover {
+		cursor: pointer;
+		background-color: #826a45;
+		border: 1px solid #826a45;
+	}
+`;
+
 export const Boton = styled.button`
 	background: #7e1b22;
 	color: #fff;
@@ -38,6 +55,7 @@ export const Contenido = styled.div`
 	flex-direction: column;
 	align-items: center;
 	padding: 20px;
+	color: #000;
 
 	h1 {
 		font-size: 42px;

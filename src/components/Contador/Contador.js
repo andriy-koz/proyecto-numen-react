@@ -3,7 +3,7 @@ import { ContadorContext } from '../../App';
 import { Modal } from '../Modal/Modal';
 
 //importacion de styled react
-import { Contenido, ContenedorBotones, Boton } from './Contador.styled';
+import { Contenido, ContenedorBotones, Boton, BotonAdd } from './Contador.styled';
 //importacion de estilos css
 //import './style-contador.css'
 const Contador = ()  => {
@@ -20,7 +20,7 @@ const Contador = ()  => {
   return (
     <>
     <ContenedorBotones>
-      <Boton onClick={() => cambiarEstadoModal1(!estadoModal1)}>Add to cart</Boton>
+      <BotonAdd onClick={() => cambiarEstadoModal1(!estadoModal1)}>Add to cart</BotonAdd>
     </ContenedorBotones>
     <Modal
 				estado = {estadoModal1}
@@ -35,8 +35,8 @@ const Contador = ()  => {
 				<Contenido>
 					<h1>CONFIRMAR COMPRA</h1>
           <p>¿Está seguro que quiere comprar este producto?</p>
-					<p> Nombre</p>
-					<p>precio</p>
+					<p> Prod.</p>
+					<p>Precio: $</p>
 					<Boton onClick={() => confirmarCompra()}>Confirmar</Boton>
 					<Boton onClick={() => cambiarEstadoModal1(!estadoModal1)}>Cancelar</Boton>
 				</Contenido>

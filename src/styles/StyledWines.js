@@ -7,6 +7,9 @@ export const StyledWinesContainer = styled.div`
   align-items: center;
   flex-wrap:wrap;
   width: 100%;
+  button{
+    margin-top: -30px;
+  }
 `;
 
 export const StyledCards = styled.div`
@@ -20,5 +23,9 @@ export const StyledCards = styled.div`
     height: 80%;
     margin-left: 20px;
   }
-  
 `;
+
+export const ImgText = styled.h5`
+  text-align: center;
+  margin-top: 5px;
+`

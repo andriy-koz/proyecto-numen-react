@@ -23,7 +23,7 @@ const Wines = () => {
         color: '#fff',
         display: 'flex',
         flexDirection: 'column',
-        paddingLeft: '45px',
+        paddingLeft: '47px',
         alignItems: 'center',
         backgroundColor: '#161314',
         paddingTop: '30px',

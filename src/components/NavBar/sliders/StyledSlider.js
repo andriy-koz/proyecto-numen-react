@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StyledSlider = styled.div`
   z-index:10000;
-  margin-top: 55px;
+  margin-top: 75px;
   display: flex;
   flex-direction: column;
   align-items: center;

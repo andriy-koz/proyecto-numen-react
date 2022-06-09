@@ -20,7 +20,7 @@ const Contador = ()  => {
   return (
     <>
     <ContenedorBotones>
-      <BotonAdd onClick={() => cambiarEstadoModal1(!estadoModal1)}>Añadir al carrito</BotonAdd>
+      <BotonAdd onClick={() => cambiarEstadoModal1(!estadoModal1)}>Comprar</BotonAdd>
     </ContenedorBotones>
     <Modal
 				estado = {estadoModal1}

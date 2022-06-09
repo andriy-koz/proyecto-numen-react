@@ -9,15 +9,9 @@
     },
     {
         "id": 2,
-        "nombre": "Portillo, Cabernet Sauvignon.",
+        "nombre": "Fabre Montmayour, reserva Malbec.",
         "precio": 2300.00,
-        "img": "https://i.ibb.co/0f63kY6/portillo-cabernet-sauvignon.png"
-    },
-    {
-        "id": 3,
-        "nombre": "Alma Mora.",
-        "precio": 1999.99,
-        "img": "https://i.ibb.co/tDQP2SN/alma-mora.png"
+        "img": "https://i.ibb.co/8xgms2T/fabre-montmayour-malbec.png"
     }
 ]
 }

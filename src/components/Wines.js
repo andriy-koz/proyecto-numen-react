@@ -37,7 +37,12 @@ const getVinos = async()=>{
       <h4>Top Selling Wines this Month</h4>
       <div>
         <StyledWinesContainer>
-          {vinos.map((vino)=><StyledCards key={vino.id}>{vino.img} <ImgText>Prod.:{vino.nombre}</ImgText><ImgText>${vino.precio} </ImgText> <Contador/></StyledCards>)}
+          {vinos.map((vino)=><StyledCards key={vino.id}>
+          <img src={vino.img}/>
+          <ImgText>Prod.:{vino.nombre}</ImgText>
+          <ImgText>${vino.precio} </ImgText>
+          <Contador/>
+        </StyledCards>)}
         </StyledWinesContainer>
       </div>
     </div>

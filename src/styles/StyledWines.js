@@ -5,8 +5,11 @@ export const StyledWinesContainer = styled.div`
   display: flex;
   justify-items: center;
   align-items: center;
-  flex-wrap:wrap;
-  width: 100%;
+  /* flex-wrap:wrap; */
+  max-width: 1200px;
+  @media(max-width: 786px) {
+    flex-direction: column;
+  }
 `;
 
 export const StyledCards = styled.div`

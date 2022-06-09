@@ -6,21 +6,21 @@ import Contador from './Contador/Contador';
 
 const Wines = () => {
 
-  useEffect(()=>{
-  getVinos();
-},[])
+  useEffect(() => {
+    getVinos();
+  }, [])
 
-const [vinos,setVinos]= useState([]);
+  const [vinos, setVinos] = useState([]);
 
-const getVinos = async()=>{
-  try {
-    const res = axios.get("http://localhost:3006/vinos").then(res=>{
-      setVinos(res.data);
-    })
-  } catch (error) {
-    alert('error')
+  const getVinos = async () => {
+    try {
+      const res = axios.get("http://localhost:3006/vinos").then(res => {
+        setVinos(res.data);
+      })
+    } catch (error) {
+      alert('error')
+    }
   }
-}
 
   return (
     <div
@@ -35,16 +35,16 @@ const getVinos = async()=>{
       }}>
       <h2>Vinos más vendidos del mes</h2>
       <h4>Top Selling Wines this Month</h4>
-      <div>
-        <StyledWinesContainer>
-          {vinos.map((vino)=><StyledCards key={vino.id}>
-          <img src={vino.img}/>
+      {/* <div> */}
+      <StyledWinesContainer>
+        {vinos.map((vino) => <StyledCards key={vino.id}>
+          <img alt='' src={vino.img} />
           <ImgText>Prod.:{vino.nombre}</ImgText>
           <ImgText>${vino.precio} </ImgText>
-          <Contador/>
+          <Contador />
         </StyledCards>)}
-        </StyledWinesContainer>
-      </div>
+      </StyledWinesContainer>
+      {/* </div> */}
     </div>
   );
 };

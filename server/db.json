@@ -4,7 +4,7 @@
         "id": 1,
         "nombre": "Las Perdices, reserva Malbec.",
         "precio": 1500.00,
-        "img": "https://i.ibb.co/pvL7XJ4/las-perdices-reserva-malbec.png"
+        "img": "https://i.ibb.co/xzzVRDG/las-perdices-reserva-malbec.png"
         
     },
     {
@@ -17,7 +17,7 @@
         "id": 3,
         "nombre": "Alma Mora.",
         "precio": 1999.99,
-        "img": "https://i.ibb.co/QH8gHnv/alma-mora.png"
+        "img": "https://i.ibb.co/tDQP2SN/alma-mora.png"
     }
 ]
 }

@@ -14,6 +14,8 @@ const Wines = () => {
     <img src={vino3} alt='vino3' title='vino3' />,
     <img src={vino4} alt='vino4' title='vino4' />,
   ];
+
+ 
   //EN DONDE DICE TITLE (en las img) PONER EL NOMBRE DE LOS VINOS//
   const winesMap = winesImg.map(item => <StyledCards>{item} <ImgText>Prod.:</ImgText><ImgText>Precio:$ </ImgText> <Contador/></StyledCards>);
 //DEBAJO DE WINES MAP EN EL RETURN, IRIA EL MAPEO DE LOS NOMBRES Y EL PRECIO

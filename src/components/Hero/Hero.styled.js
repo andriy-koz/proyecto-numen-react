@@ -4,6 +4,8 @@ export const StyledHero = styled.div`
   height: 430px;
   background-image: url(${({ img }) => img});
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   margin: 0 auto;
   position: relative;

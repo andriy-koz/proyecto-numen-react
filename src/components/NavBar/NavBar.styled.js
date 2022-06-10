@@ -17,7 +17,9 @@ export const StyledNavBar = styled.div`
 export const IconsContainer = styled.div`
   display: flex;
   gap: 15px;
-  margin-right: 30px;
+  @media (min-width: 500px) {
+    margin-right: 30px;
+  }
   @media (min-width: 768px) {
     display: none;
   }

@@ -58,9 +58,9 @@ const NavBar = () => {
         <Button type='cart' onClick={cartHandler} counter={cont} />
         <Button type='menu' opened={openedMenu} onClick={menuHandler} />
       </IconsContainer>
-      {/* <MenuSlider opened={openedMenu} />
+      <MenuSlider opened={openedMenu} />
       <UserSlider opened={openedUser} />
-      <CartSlider opened={openedCart} counter={cont} /> */}
+      <CartSlider opened={openedCart} counter={cont} />
     </StyledNavBar>
   );
 };

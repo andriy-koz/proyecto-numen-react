@@ -5,21 +5,24 @@ import { StyledSlider } from './StyledSlider';
 import { myList } from '../Links';
 
 const StyledMenu = styled(StyledSlider)`
-  ul {
+  div {
     color: ${props => props.theme.color.tertiary};
     display: grid;
     gap: 20px;
+    a {
+      color: #fff;
+    }
   }
 `;
 
 const MenuSlider = props => {
   return (
     <StyledMenu opened={props.opened}>
-      <ul>
+      <div>
         {myList.map((link, index) => (
-          <li key={index}>{link}</li>
+          <a href={link[1]} key={index}>{link[0]}</a>
         ))}
-      </ul>
+      </div>
     </StyledMenu>
   );
 };

@@ -28,12 +28,11 @@ const Wines = () => {
         color: '#fff',
         display: 'flex',
         flexDirection: 'column',
-        paddingLeft: '47px',
         alignItems: 'center',
         backgroundColor: '#161314',
         paddingTop: '30px',
       }}>
-      <h2>Vinos más vendidos del mes</h2>
+      <h2 id='vinos'>Vinos más vendidos del mes</h2>
       <h4>Top Selling Wines this Month</h4>
       {/* <div> */}
       <StyledWinesContainer>

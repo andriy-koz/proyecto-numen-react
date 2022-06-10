@@ -20,7 +20,7 @@ const UserSlider = props => {
   return (
     <StyledUser opened={props.opened}>
       <img src={userIcon} alt='' />
-      <p>PROFILE</p>
+      <p>Perfil</p>
     </StyledUser>
   );
 };

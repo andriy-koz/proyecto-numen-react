@@ -4,19 +4,19 @@ import styled from 'styled-components';
 import Button from './Button';
 
 export const myList = [
-  'SOBRE NOSOTROS',
-  'NUESTROS VINOS',
-  'COSECHAS',
-  'COMPRAR',
+  ['NUESTROS VINOS', '#vinos'], ['NUESTRAS BODEGAS', '#bodegas'], ['MEMBRESÍA', '#form'], ['CONTACTO', '#footer']
 ];
 
-const StyledLinks = styled.ul`
+const StyledLinks = styled.div`
   margin: 15px 0 15px;
   order: 3;
   display: none;
   list-style: none;
   color: ${props => props.theme.color.tertiary};
-  li:hover {
+  a {
+    color: #fff;
+  }
+  a:hover {
     cursor: pointer;
     color: white;
   }
@@ -31,7 +31,7 @@ const Links = (props) => {
   return (
     <StyledLinks>
       {myList.map((link, index) => (
-        <li key={index}>{link}</li>
+        <a key={index} href={link[1]}>{link[0]}</a>
       ))}
       <Button type='cart' onClick={props.onClick} counter={props.counter} />
     </StyledLinks>

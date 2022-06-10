@@ -17,7 +17,7 @@ const StyledCart = styled(StyledSlider)`
 const CartSlider = props => {
   return (
     <StyledCart opened={props.opened}>
-      <p>{props.counter} Items added</p>
+      <p>{props.counter} vinos agregados</p>
     </StyledCart>
   );
 };

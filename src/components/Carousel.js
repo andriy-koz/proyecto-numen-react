@@ -40,22 +40,22 @@ const responsive = {
 const Gallery = () => {
   return (<>
     <div className='contenedor-general'>
-    <h2 className='carousel-h2'>Nuestras bodegas</h2>
-    <h6 className='carousel-h6'>(Apoya el cursor para más información)</h6>
-    <AliceCarousel
-      disableButtonsControls
-      disableDotsControls
-      mouseTracking
-      items={items}
-      paddingLeft={50}
-      paddingRight={50}
-      responsive={responsive}
-      infinite
-      autoPlay
-      autoPlayInterval={2500}
-    />
+      <h2 className='carousel-h2' id='bodegas'>Nuestras bodegas</h2>
+      <h6 className='carousel-h6'>(Apoya el cursor para más información)</h6>
+      <AliceCarousel
+        disableButtonsControls
+        disableDotsControls
+        mouseTracking
+        items={items}
+        paddingLeft={50}
+        paddingRight={50}
+        responsive={responsive}
+        infinite
+        autoPlay
+        autoPlayInterval={2500}
+      />
     </div>
-    </>
+  </>
   );
 };
 

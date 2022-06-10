@@ -17,7 +17,7 @@ const Form = () => {
   ]);
 
   return (
-    <StyledForm>
+    <StyledForm id='form'>
       <FormContainer>
         <LayoutDiv>
           <h3>Unite a nuestra Lista VIP</h3>

@@ -16,6 +16,12 @@ const StyledInput = styled.input`
   @media (min-width: 768px) {
     margin-right: ${({ open }) => (open ? 0 : -168)}px;
   }
+  @media (max-width: 475px) {
+    height: 24px;
+    position: absolute;
+    top: 0;
+    margin-top: 90px;
+  }
 `;
 
 const SearchInput = props => {

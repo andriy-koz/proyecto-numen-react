@@ -17,4 +17,5 @@ export const StyledSlider = styled.div`
   transform: translateX(${({ opened }) => (opened ? 0 : 100)}%);
   opacity: ${({ opened }) => (opened ? 1 : 0)};
   pointer-events: ${({ opened }) => (opened ? 'auto' : 'none')};
+  visibility: ${({ opened }) => (opened ? 'visible' : 'hidden')};;
 `;

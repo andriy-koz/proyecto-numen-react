@@ -12,7 +12,6 @@ export const StyledInput = styled.div`
     border: 1px solid ${props => (props.hasError ? '#b21e35' : '#fff')};
     border-radius: 4px;
     transition: all 0.5s;
-    width: 80%;
   }
 
   input:focus {

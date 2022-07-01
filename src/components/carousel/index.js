@@ -25,7 +25,7 @@ const Gallery = () => {
     }
     getBodegas();
   }, [])
-  const items = bodegas.map((bodega)=> <img key={bodega.id} src={bodega.img} onDragStart={handleDragStart}/>)
+  const items = bodegas.map((bodega)=> <img key={bodega.id} title={bodega.title} src={bodega.img} onDragStart={handleDragStart}/>)
 
   return (<>
     <div className='contenedor-general'>

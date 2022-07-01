@@ -16,6 +16,9 @@ const ModalAge = props => {
         <StyledLogo src={logo} />
         <StyledMessage>Debes ser mayor de 18 para continuar</StyledMessage>
         <StyledButton>NO TENGO 18 AUN</StyledButton>
+        {/* 
+          Podrían persistir la información en el navegador
+        */}
         <StyledButton main onClick={props.onConfirm}>
           SOY MAYOR DE 18, VAMOS
         </StyledButton>

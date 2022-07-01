@@ -39,6 +39,8 @@ const StyledCounterDisplay = styled.div`
 `;
 
 const Button = props => {
+  // Los ternarios tan anidados no son una buena idea, mejor abstraerlo en una función
+  // getIcon y alli usar if statements
   const openIcon =
     props.type === 'search'
       ? searchIcon

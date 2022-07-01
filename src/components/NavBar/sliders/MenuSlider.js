@@ -18,6 +18,7 @@ const StyledMenu = styled(StyledSlider)`
 const MenuSlider = props => {
   return (
     <StyledMenu opened={props.opened}>
+      {/* ¿Por qué este div? */}
       <div>
         {myList.map((link, index) => (
           <a href={link[1]} key={index}>{link[0]}</a>

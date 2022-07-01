@@ -1,9 +1,11 @@
 import React, { createContext, useState } from 'react';
 import { GlobalStyles } from './components/GlobalStyle';
-import NavBar from './components/NavBar/NavBar';
+import NavBar from './components/NavBar';
+// TIP: index.js facilita el import para evitar la redundancia
 import { ThemeProvider } from 'styled-components';
 import Hero from './components/Hero/Hero';
-import Contador from './components/Contador/Contador';
+// Este componente no se está utilizando
+import Contador from './components/Contador';
 import Wines from './components/Wines';
 import Gallery from './components/Carousel';
 import './styles/carousel.css';
@@ -11,17 +13,22 @@ import Form from './components/Form/Form';
 import { FooterContainer } from './containers/footer';
 import ModalAge from './components/ModalAge/ModalAge';
 
+// Crear carpeta contexts para poner el contexto, queda más prolijo y limpio
 export const ContadorContext = createContext();
 
+// Aconsejar conventional commits de ahora en adelante
 function App() {
   const [cont, setCount] = useState(0);
   const [modalAgeOpen, setModalAgeOpen] = useState(true);
-  const modalAgeHandler = () => setModalAgeOpen(false);
+  // Es más limpio setear el estado con el opuesto del valor previo
+  const modalAgeHandler = () => setModalAgeOpen(!modalAgeOpen);
 
+  // El theme con los estilos globales podría ir en un archivo aparte
   const theme = {
     color: {
       primary: '#161314',
       secondary: '#2B2628',
+      // complementary es un mejor name
       tertiary: '#F4F3F3',
     },
     font: 'Cormorant',

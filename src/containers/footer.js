@@ -9,6 +9,7 @@ export function FooterContainer() {
             <Footer.Row>
                 <Footer.Column>
                 <Footer.Title>Nosotros</Footer.Title>
+                {/* Seria bueno mapear las listas */}
                     <Footer.Link href="#">Historia</Footer.Link>
                     <Footer.Link href="#">Clientes</Footer.Link>
                     <Footer.Link href="#">Testimonios</Footer.Link>

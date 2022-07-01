@@ -9,9 +9,10 @@ import CartSlider from './sliders/CartSlider';
 import Button from './Button';
 import { ContadorContext } from '../../App';
 
-
+// No dejar espacios vacíos, aquí habia 3 renglones vacios
 
 const NavBar = () => {
+  // open es mejor que opened
   const [openedMenu, setOpenedMenu] = useState(false);
   const [openedUser, setOpenedUser] = useState(false);
   const [openedSearch, setOpenedSearch] = useState(false);
@@ -19,12 +20,8 @@ const NavBar = () => {
 
   const { cont } = useContext(ContadorContext);
 
+  // En lugar del useEffect, podrían agregar esta lógica a los handlers, es más performante
   useEffect(() => {
-    if (openedMenu) {
-      setOpenedSearch(false);
-      setOpenedUser(false);
-      setOpenedCart(false);
-    }
     if (openedUser) {
       setOpenedMenu(false);
       setOpenedSearch(false);
@@ -40,9 +37,14 @@ const NavBar = () => {
       setOpenedSearch(false);
       setOpenedUser(false);
     }
-  }, [openedMenu, openedUser, openedSearch]);
+  }, [openedUser, openedSearch]);
 
-  const menuHandler = () => setOpenedMenu(prevState => !prevState);
+  const menuHandler = () => {
+    setOpenedMenu(prevState => !prevState);
+    setOpenedSearch(false);
+    setOpenedUser(false);
+    setOpenedCart(false);
+  };
   const userHandler = () => setOpenedUser(prevState => !prevState);
   const searchHandler = () => setOpenedSearch(prevState => !prevState);
   const cartHandler = () => setOpenedCart(prevState => !prevState);
@@ -51,6 +53,8 @@ const NavBar = () => {
     <StyledNavBar>
       <StyledImg src={logo} alt='Numen logo'></StyledImg>
       <Links onClick={cartHandler} counter={cont} />
+      {/* En lugar de ocultarlo con media queries, pueden renderizarlos condicionalmente
+        en base a ciertos parámetros. Por ejemplo, podrían crear un hook useIsMobile, o useWidth */}
       <IconsContainer>
         <SearchInput opened={openedSearch} />
         <Button type='search' opened={openedSearch} onClick={searchHandler} />

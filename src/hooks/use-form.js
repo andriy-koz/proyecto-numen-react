@@ -29,6 +29,7 @@ const formValidate = state => {
 };
 
 const useForm = inputIds => {
+  // Sería mover mejor esta funcion fuera del custom hook
   const initialState = useCallback(ids => {
     const myState = {};
     ids.forEach(id => {
@@ -57,6 +58,7 @@ const useForm = inputIds => {
     dispatch({ type: 'RESET' });
   };
 
+  // ¿Por qué usaron un for?
   for (const key in state) {
     if (!state[key].val && state[key].touched) {
       let newState = { ...state };
@@ -68,8 +70,10 @@ const useForm = inputIds => {
     }
   }
 
+  // ¿Por qué una constante y no un estado?
   const validForm = formValidate(state);
 
+  // Un objeto suele ser mejor que un array
   return [state, onInputChange, onInputBlur, onFormSubmit, validForm];
 };
 

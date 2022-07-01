@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Button from './Button';
 
 export const myList = [
+  // Un array de objetos es mejor que un array de arrays
   ['NUESTROS VINOS', '#vinos'], ['NUESTRAS BODEGAS', '#bodegas'], ['MEMBRESÍA', '#form'], ['CONTACTO', '#footer']
 ];
 

@@ -43,6 +43,8 @@ export const Modal = ({
 };
 export default Modal;
 
+// Poner en hoja de estilos
+// ¿No tienen otros modales donde se podría reutilizar Overlay?
 const Overlay = styled.div`
   width: 100vw;
   height: 100vh;

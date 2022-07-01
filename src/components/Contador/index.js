@@ -5,10 +5,11 @@ import { Modal } from '../Modal/Modal';
 //importacion de styled react
 import { Contenido, ContenedorBotones, Boton, BotonAdd } from './Contador.styled';
 //importacion de estilos css
-//import './style-contador.css'
+// import './style-contador.css'
 const Contador = ()  => {
   const {cont,setCount} = useContext(ContadorContext);
 
+  // usar convención state, setState
   const[estadoModal1, cambiarEstadoModal1] = useState(false);
 
   function confirmarCompra(){

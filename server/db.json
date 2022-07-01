@@ -12,6 +12,18 @@
         "nombre": "Fabre Montmayour, reserva Malbec.",
         "precio": 2300.00,
         "img": "https://i.ibb.co/8xgms2T/fabre-montmayour-malbec.png"
+    },
+    {
+        "id": 3,
+        "nombre": "Grangf Philippe, Cabernet Franc.",
+        "precio": 3000.00,
+        "img": "https://i.ibb.co/PGJvxdk/favpng-dessert-wine-kenwood-franciacorta-docg-sauvignon-blanc.png"
+    },
+    {
+        "id": 5,
+        "nombre":"Rocca di Frassinello.",
+        "precio": 1899.99,
+        "img":"https://i.ibb.co/n79f7rx/favpng-red-wine-chianti-docg-cabernet-sauvignon-ch-teau-dyquem.png"
     }
 ],
   "bodegas": [

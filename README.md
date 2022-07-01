@@ -88,10 +88,6 @@ Achicar textos al reducir pantalla en Hero.
 
 Unificar patrones de nombres.
 
-Usar estructura de archivos del componente Contador. Implementar index.js.
-
-En "styles" van los estilos globales.
-
 Limpiar el componente App.
 
 Conventional commits. (ANGULAR)

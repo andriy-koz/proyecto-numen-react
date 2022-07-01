@@ -40,8 +40,8 @@ const Wines = () => {
         {vinos.map((vino) => (
           <StyledCards key={vino.id}>
           <img alt='' src={vino.img} />
-          <ImgText>Prod.:{vino.nombre}</ImgText>
-          <ImgText>${vino.precio} </ImgText>
+          <ImgText>Prod.: {vino.nombre}</ImgText>
+          <ImgText>$ {vino.precio} </ImgText>
           <Contador />
         </StyledCards>
         ))}

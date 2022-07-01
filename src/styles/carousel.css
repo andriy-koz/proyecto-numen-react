@@ -19,11 +19,23 @@
   
 }
 
+.alice-carousel__prev-btn {
+  text-align: left;
+  position: relative;
+  bottom: 7rem;
+}
+.alice-carousel__next-btn {
+  text-align: right;
+  position: relative;
+  bottom: 7rem;
+}
+
 .alice-carousel__prev-btn-item,
 .alice-carousel__next-btn-item {
-  color: #898da3;
-  font-size: 15px;
-  border: solid 2px #898da3;
+  color: #fff;
+  background-color: #111;
+  opacity: .88;
+  font-size: 18px;
   border-radius: 100px;
 }
 

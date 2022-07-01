@@ -24,6 +24,7 @@ export const BotonAdd = styled.button`
   letter-spacing: 3px;
   font-weight: 500;
 	border: 1px solid #7e1b22;
+	border-radius: 4.5px;
 	margin: 10px;
 	align-self:center;
 	margin-top: -30px;

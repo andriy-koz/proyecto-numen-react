@@ -42,7 +42,7 @@ const Wines = () => {
           <img alt='' src={vino.img} />
           <ImgText>Prod.: {vino.nombre}</ImgText>
           <ImgText>$ {vino.precio} </ImgText>
-          <Contador />
+          <Contador/>
         </StyledCards>
         ))}
       </StyledWinesContainer>

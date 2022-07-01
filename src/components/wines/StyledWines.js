@@ -5,7 +5,7 @@ export const StyledWinesContainer = styled.div`
   display: flex;
   justify-items: center;
   align-items: center;
-  /* flex-wrap:wrap; */
+  flex-wrap:wrap; 
   max-width: 1200px;
   @media(max-width: 786px) {
     flex-direction: column;
@@ -20,7 +20,7 @@ export const StyledCards = styled.div`
   background-color: #201D1E;
   img {
     width:80%;
-    height: 80%;
+    height: 75%;
     margin-left: 20px;
   }
 `;

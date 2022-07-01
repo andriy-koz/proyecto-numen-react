@@ -1,15 +1,15 @@
 import React, { createContext, useState } from 'react';
-import { GlobalStyles } from './components/GlobalStyle';
-import NavBar from './components/NavBar/NavBar';
+import { GlobalStyles } from './styles/GlobalStyle';
+import NavBar from './components/NavBar';
 import { ThemeProvider } from 'styled-components';
-import Hero from './components/Hero/Hero';
-import Contador from './components/Contador/Contador';
-import Wines from './components/Wines';
-import Gallery from './components/Carousel';
+import Hero from './components/hero';
+import Contador from './components/contador';
+import Wines from './components/wines';
+import Gallery from './components/carousel';
 import './styles/carousel.css';
-import Form from './components/Form/Form';
+import Form from './components/form';
 import { FooterContainer } from './containers/footer';
-import ModalAge from './components/ModalAge/ModalAge';
+import ModalAge from './components/modal-age';
 
 export const ContadorContext = createContext();
 

@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { ImgText, StyledCards, StyledWinesContainer } from '../styles/StyledWines';
-import Contador from './Contador/Contador';
+import { ImgText, StyledCards, StyledWinesContainer } from './StyledWines';
+import Contador from '../contador/';
 
 
 const Wines = () => {

@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { ContadorContext } from '../../App';
-import { Modal } from '../Modal/Modal';
+import { Modal } from '../modal';
 
 //importacion de styled react
 import { Contenido, ContenedorBotones, Boton, BotonAdd } from './Contador.styled';

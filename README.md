@@ -68,3 +68,38 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+CORRECCIONES:
+// Estilos:
+
+Sección Vinos: Agregar padding y redondear bordes de botones. Agregar vinos (www.pngwing.com/es). 
+
+Agregar botones a carrousel.  
+
+Unificar fuentes. 
+
+Achicar logo en nav bar.
+
+Achicar textos al reducir pantalla en Hero.
+
+// Código:
+
+Unificar patrones de nombres.
+
+Usar estructura de archivos del componente Contador. Implementar index.js.
+
+En "styles" van los estilos globales.
+
+Limpiar el componente App.
+
+Conventional commits. (ANGULAR)
+
+No dejar espacios vacios en el código (en NavBar) (extensión ESLint).
+
+OpenedMenu -> OpenMenu
+
+Guardar estado de ModalOpen en localStorage.
+
+En Wines.js agregar error handling

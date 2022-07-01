@@ -35,7 +35,7 @@ const Wines = () => {
       }}>
       <h2 id='vinos'>Vinos más vendidos del mes</h2>
       <h4>Top Selling Wines this Month</h4>
-      {/* <div> */}
+      
       <StyledWinesContainer>
         {vinos.map((vino) => <StyledCards key={vino.id}>
           <img alt='' src={vino.img} />
@@ -44,7 +44,6 @@ const Wines = () => {
           <Contador />
         </StyledCards>)}
       </StyledWinesContainer>
-      {/* </div> */}
     </div>
   );
 };

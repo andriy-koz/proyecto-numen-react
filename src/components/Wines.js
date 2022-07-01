@@ -5,22 +5,23 @@ import Contador from './Contador/Contador';
 
 
 const Wines = () => {
-
-  useEffect(() => {
-    getVinos();
-  }, [])
-
   const [vinos, setVinos] = useState([]);
-
-  const getVinos = async () => {
+  useEffect(() => {
+    const getVinos = ()=> {
     try {
-      const res = axios.get("http://localhost:3006/vinos").then(res => {
+      axios.get("http://localhost:3006/vinos").then(res => {
         setVinos(res.data);
       })
     } catch (error) {
       alert('error')
     }
   }
+    getVinos();
+  }, [])
+
+  
+
+  
 
   return (
     <div

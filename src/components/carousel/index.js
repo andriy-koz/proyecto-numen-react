@@ -38,8 +38,8 @@ const Gallery = () => {
         paddingRight={50}
         responsive={responsive}
         infinite
-        autoPlay
-        autoPlayInterval={2500}
+        //autoPlay//
+        autoPlayInterval={1500}
       />
     </div>
   </>

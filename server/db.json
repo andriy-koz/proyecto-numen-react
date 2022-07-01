@@ -13,5 +13,70 @@
         "precio": 2300.00,
         "img": "https://i.ibb.co/8xgms2T/fabre-montmayour-malbec.png"
     }
-]
+],
+  "bodegas": [
+    {
+        "id": "alpamanta",
+        "title": "Alpamanta",
+        "img": "https://i.ibb.co/VMJpTR8/alpamanta.jpg"
+
+    },
+    {
+        "id": "atamisque",
+        "title": "Atamisque",
+        "img": "https://i.ibb.co/hZR2zTX/atamisque.webp"
+
+    },
+    {
+        "id": "bianchi",
+        "title": "Bianchi",
+        "img": "https://i.ibb.co/CBHxLqX/bianchi.jpg"
+
+    },
+    {
+        "id": "catenaZapata",
+        "title": "Catena Zapata",
+        "img": "https://i.ibb.co/DM4FSBh/catena-Zapata.jpg"
+    },
+    {
+        "id": "escorihuelaGascon",
+        "title": "Escorihuela Gascón",
+        "img": "https://i.ibb.co/f0jYjXG/escorihuela-Gascon.jpg"
+    },
+    {
+        "id": "estanciaMendoza",
+        "title": "Estancia Mendoza",
+        "img": "https://i.ibb.co/Kxg5bBL/estancia-Mendoza.jpg"
+    },
+    {
+        "id": "salentein",
+        "title": "Salentein",
+        "img": "https://i.ibb.co/FV2D9jP/salentein.png"
+    },
+    {
+        "id": "septimaVista",
+        "title": "Séptima Vista",
+        "img": "https://i.ibb.co/mSbGLcd/septima-Vista.jpg"
+    },
+    {
+        "id": "suter",
+        "title": "Suter",
+        "img": "https://i.ibb.co/KFwtG68/suter.jpg"
+    },
+    {
+        "id": "tierrasAltas",
+        "title": "Tierras Altas",
+        "img": "https://i.ibb.co/SdKV8wm/tierras-Altas.jpg"
+    },
+    {
+        "id": "trivento",
+        "title": "Trivento",
+        "img": "https://i.ibb.co/D1zZ9nR/trivento.jpg"
+    },
+    {
+        "id": "zuccardi",
+        "title": "Zuccardi",
+        "img": "https://i.ibb.co/j6XMbBJ/zuccardi.jpg"
+    }
+    ]
 }

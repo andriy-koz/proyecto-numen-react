@@ -37,12 +37,14 @@ const Wines = () => {
       <h4>Top Selling Wines this Month</h4>
       
       <StyledWinesContainer>
-        {vinos.map((vino) => <StyledCards key={vino.id}>
+        {vinos.map((vino) => (
+          <StyledCards key={vino.id}>
           <img alt='' src={vino.img} />
           <ImgText>Prod.:{vino.nombre}</ImgText>
           <ImgText>${vino.precio} </ImgText>
           <Contador />
-        </StyledCards>)}
+        </StyledCards>
+        ))}
       </StyledWinesContainer>
     </div>
   );
